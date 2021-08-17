@@ -24,6 +24,11 @@
   background-color: var(--bg-color2);
 }
 
+section {
+  padding: 100px 0;
+  text-align: center;
+}
+
 .section__title {
   margin-bottom: 40px;
   font-size: 45px;
@@ -84,8 +89,9 @@
 
 /* HERO */
 .hero {
-  padding-top: 90px;
   color: white;
+  padding-bottom: 0;
+  text-align: start;
 }
 
 .hero__title {
@@ -120,7 +126,7 @@
 
 /* AUTHOR */
 .author {
-  padding-top: 90px;
+  padding-bottom: 0;
 }
 
 .author__text {
@@ -137,5 +143,64 @@
 .author__name {
   font-size: 45px;
   font-weight: 900;
+  color: white;
+}
+
+/* DESCRIPTION */
+.description__icon {
+  border: 3px solid var(--color1);
+  width: 80px;
+  height: 80px;
+  line-height: 75px;
+  text-align: center;
+  border-radius: 50%;
+  color: var(--color1);
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.fa {
+  display: inline-block;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.description__title {
+  padding-bottom: 15px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.description__text {
+  color: white;
+  font-size: 18px;
+}
+
+.description__text:before {
+  content: "";
+  display: block;
+  margin: 0px auto 15px;
+  width: 80px;
+  height: 3px;
+  background-color: #6583fe;
+}
+
+.description__card {
+  height: 90%;
+  padding: 25px;
+  margin-bottom: 50px;
+}
+
+i:before {
+  font-size: 40px;
+}
+
+.description__youtube-about {
+  max-width: 700px;
+  font-size: 22px;
+  line-height: 40px;
+  margin: 0 auto 25px;
   color: white;
 }
