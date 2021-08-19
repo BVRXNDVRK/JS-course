@@ -15,7 +15,7 @@
     <div class="container">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="img/logo.png" alt="image: logo" class="header__logo"></a>
+          <a class="navbar-brand" href="#"><img src="img/logo.png" alt="image: logo" class="header__logo logo"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -144,7 +144,7 @@
         <div class="col-12">
           <p class="description__youtube-about">На YouTube доступно более 5 часов материалов из данного курса абсолютно бесплатно. Вы можете изучить этот материал и
           после этого принять решение о заказе данного видео курса.</p>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/4cXGrcP_yNo" title="YouTube video player"
+          <iframe class="video-fluid" width="560" height="315" src="https://www.youtube.com/embed/4cXGrcP_yNo" title="YouTube video player"
             frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
         </div>
@@ -1029,8 +1029,32 @@
     </div>
   </section>
 
-  <footer class="footer">
-
+  <footer class="footer bg2">
+    <div class="container">
+      <div class="row">
+        <div class="col-4 text-start d-flex justify-content-center flex-column">
+          <a class="footer-brand" href="#"><img src="img/logo.png" alt="image: logo" class="footer__logo logo"></a>
+          <p class="footer__text">© ITDoctor, 2021</p>
+        </div>
+        <div class="col-4 text-center d-flex justify-content-center flex-column">
+          <div class="footer__socials-wrapper">
+            <a href="https://www.youtube.com/c/ITDoctor" class="footer__social-link"><i class="footer__social-icon  fa-youtube-play"></i></a>
+            <a href="https://t.me/itdoctorstudio" class="footer__social-link"><i class="footer__social-icon  fa-send"></i></a>
+            <a href="https://vk.com/itdoctorstudio" class="footer__social-link"><i class="footer__social-icon  fa-vk"></i></a>
+            <a href="https://instagram.com/ismail_asanovich/" class="footer__social-link"><i class="footer__social-icon  fa-instagram"></i></a>
+            <a href="https://www.facebook.com/drinei" class="footer__social-link"><i class="footer__social-icon  fa-facebook"></i></a>
+            <a href="https://twitter.com/ITDoctor_morph" class="footer__social-link"><i class="footer__social-icon  fa-twitter"></i></a>
+            <a href="https://github.com/morphIsmail" class="footer__social-link"><i class="footer__social-icon  fa-github"></i></a>
+          </div>
+          <a class="footer__social-link c1" href="policy.html">Политика конфиденциальности</a>
+        </div>
+        <div class="col-4 text-end d-flex justify-content-center flex-column">
+          <a class="footer__mail" target="_blank"
+            href="mailto:ismail_2016@mail.ru?subject=Вопрос по курсу 'Супер JavaScript'&amp;body=Здравствуйте, уважаемый ITDoctor,">ismail_2016@mail.ru</a>
+            <p class="footer__text">По всем вопросам в любое время</p>
+        </div>
+      </div>
+    </div>
   </footer>
 
 <script src="js/bootstrap.bundle.min.js"></script>  

@@ -66,7 +66,7 @@ section {
   flex-grow: 0;
 }
 
-.header__logo {
+.logo {
   height: 50px;
 }
 
@@ -377,3 +377,51 @@ i:before {
   transition: 0.3s ease-in;
 }
 
+.buy__price-wrapper {
+  margin: 35% 0;
+}
+
+/* FOOTER */
+.footer {
+  padding: 50px 0;
+}
+
+.footer__text {
+  margin: 0;
+  margin-top: 5px;
+  color: white;
+}
+
+.footer__social-icon {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  color: white;
+}
+
+.footer__social-icon:before {
+  font-size: 20px;
+}
+
+.footer__social-link {
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.footer__social-link:not(:last-child) {
+  margin-right: 18px;
+}
+
+.footer__socials-wrapper {
+  margin-bottom: 10px;
+}
+
+.footer__mail {
+  margin-bottom: 5px;
+  color: var(--color1);
+  font-size: 24px;
+  line-height: 24px;
+  text-decoration: none;
+}
