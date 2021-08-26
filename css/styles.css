@@ -146,10 +146,6 @@ section {
   color: white;
 }
 
-.author__image {
-  min-width: 450px;
-}
-
 .author__name {
   font-size: 45px;
   font-weight: 900;
@@ -323,7 +319,7 @@ i:before {
 }
 
 .learning__wrapper {
-  width: 1160px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -425,3 +421,10 @@ i:before {
   line-height: 24px;
   text-decoration: none;
 }
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url(../img/burger-button.png);
+  width: 43px;
+  height: 43px;
+}
+

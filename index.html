@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,10 +12,10 @@
 <body>
 
   <header class="header position-fixed">
-    <div class="container">
+    <div class="container container-xs">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="img/logo.png" alt="image: logo" class="header__logo logo"></a>
+          <a class="navbar-brand d-none d-lg-block" href="#"><img src="img/logo.png" alt="image: logo" class="header__logo logo"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -26,10 +26,10 @@
                 <a class="nav-link" href="#author">Автор</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Особенности</a>
+                <a class="nav-link" href="#description">Особенности</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Содержание</a>
+                <a class="nav-link" href="#about">Содержание</a>
               </li>
             </ul>
           </div>
@@ -39,10 +39,10 @@
     </div>
   </header>
 
-  <section class="hero bg1">
+  <section class="hero bg1 pb-5 pb-xl-0">
     <div class="container">
       <div class="row">
-        <div class="col-xl-6 col-m-9 col-s-12">
+        <div class="col-xl-6 col-lg-9 col-md-12 col-sm-12">
           <h1 class="hero__title">Супер <strong>JavaScript</strong></h1>
           <p class="hero__text">Самый полный обучающий курс по изучению языка программирования JavaScript от автора образовательного канала ITDoctor</p>
           <ul class="hero__ul">
@@ -53,28 +53,28 @@
             <li class="hero__li">больше практики</li>
           </ul>
         </div>
-        <div class="col-xl-6 col-m-3 col-s-12">
-          <img class="img-fluid" src="img/javascript.png" alt="">
+        <div class="col-xl-6 col-lg-3 col-md-0 col-sm-0">
+          <img class="img-fluid d-none d-lg-block align-middle" src="img/javascript.png" alt="">
         </div>
       </div>
     </div>
   </section>
 
-  <section class="author bg2" id="author">
+  <section class="author bg2 pb-5 pb-xl-0" id="author">
     <div class="container">
       <div class="row">
-        <div class="col-xl-6 col-s-12">
-          <img src="img/author.png" alt="photo: author" class="img-fluid author__image">
+        <div class="col-xl-6">
+          <img class="img-fluid author__image ps-5 mb-3 ps-xl-0 mb-xl-0" src="img/author.png" alt="photo: author">
         </div>
-        <div class="col-xl-6 col-s-12">
-          <h2 class="section__title">Автор курса</h2>
-          <p class="author__text">Профессиональный разработчик веб-приложений и опытный преподаватель.</p>
-          <h3 class="author__name">Исмаил Усеинов</h3>
-          <p class="author__text">Занимаюсь веб-разработкой с 2013 года.</p>
-          <p class="author__text">В 2017 году основал обучающий YouTube канал ITDoctor. Делюсь своими знаниями в области программирования и создания
+        <div class="col-xl-6 ">
+          <h2 class="section__title text-center text-xl-start">Автор курса</h2>
+          <p class="author__text text-center text-xl-start">Профессиональный разработчик веб-приложений и опытный преподаватель.</p>
+          <h3 class="author__name text-center text-xl-start">Исмаил Усеинов</h3>
+          <p class="author__text text-center text-xl-start">Занимаюсь веб-разработкой с 2013 года.</p>
+          <p class="author__text text-center text-xl-start">В 2017 году основал обучающий YouTube канал ITDoctor. Делюсь своими знаниями в области программирования и создания
           сайтов. Сформировал свою собственную методику обучения, которая позволяет ученикам максимально эффективно осваивать
           изучаемый материал.</p>
-          <p class="author__text">Обучаю языкам HTML, CSS, JavaScript, PHP, работе с препроцессорами, сборщиками и системой контроля версий Git, а также
+          <p class="author__text text-center text-xl-start">Обучаю языкам HTML, CSS, JavaScript, PHP, работе с препроцессорами, сборщиками и системой контроля версий Git, а также
           многому другому из мира веб-технологий. Уже более тысячи моих учеников научились создавать сайты самостоятельно и
           зарабатывать на этом деньги.</p>
         </div>
@@ -93,7 +93,7 @@
     </div>
   </section>
 
-  <section class="description bg2">
+  <section class="description bg2" id="description">
     <div class="container">
       <h2 class="section__title">Особенности курса</h2>
       <div class="row gx-3">
@@ -144,7 +144,7 @@
         <div class="col-12">
           <p class="description__youtube-about">На YouTube доступно более 5 часов материалов из данного курса абсолютно бесплатно. Вы можете изучить этот материал и
           после этого принять решение о заказе данного видео курса.</p>
-          <iframe class="video-fluid" width="560" height="315" src="https://www.youtube.com/embed/4cXGrcP_yNo" title="YouTube video player"
+          <iframe class="video-fluid" width="100%" height="315" src="https://www.youtube.com/embed/4cXGrcP_yNo" title="YouTube video player"
             frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
         </div>
@@ -152,14 +152,14 @@
     </div>
   </section>
 
-  <section class="about bg1">
+  <section class="about bg1" id="about"> 
     <div class="container">
       <h2 class="section__title">Содержание курса</h2>
       <div class="row">
-        <div class="col-xl-5 col-s-12">
+        <div class="col-xl-5">
           <img class="about__image img-fluid" src="img/preview_course.png" alt="image: preview_course">
         </div>
-        <div class="col-xl-7 col-s-12">
+        <div class="col-xl-7">
           <p class="about__text">Курс состоит из 65 занятий, которые объединены в 4 главы, где будет рассмотрено 114 практических примера. Длительность
           курса составляет 20 часов.</p>
           <p class="about__text">Супер JavaScript — практический видеокурс: в каждой главе теоретический материал будет закрепляться множеством наглядных
@@ -167,7 +167,7 @@
         </div>
       </div>
       <div class="row mt-5">
-        <div class="col-xl-3 col-m-6 col-s-12 text-start">
+        <div class="col-xl-3 col-md-6 mt-3 mt-xl-0 text-start">
           <h4 class="about__accordion-title c1 fw-bold mb-3 text-uppercase">Глава 1</h4>
           <h5 class="about__accordion-title c2 fw-bold mb-3 ">Основы языка JavaScript</h5>
           <h6 class="about__accordion-title c1 fw-bold mb-3 ">12 занятий</h6>
@@ -306,7 +306,7 @@
             </div>
           </div>
         </div>
-        <div class="col-xl-3 col-m-6 col-s-12 text-start">
+        <div class="col-xl-3 col-md-6 mt-3 mt-xl-0 text-start">
           <h4 class="about__accordion-title c1 fw-bold mb-3 text-uppercase">Глава 2</h4>
           <h5 class="about__accordion-title c2 fw-bold mb-3 ">Работа с DOM деревом</h5>
           <h6 class="about__accordion-title c1 fw-bold mb-3 ">15 занятий</h6>
@@ -477,7 +477,7 @@
             </div>
           </div>
         </div>
-        <div class="col-xl-3 col-m-6 col-s-12 text-start">
+        <div class="col-xl-3 col-md-6 mt-3 mt-xl-0 text-start">
           <h4 class="about__accordion-title c1 fw-bold mb-3 text-uppercase">Глава 3</h4>
           <h5 class="about__accordion-title c2 fw-bold mb-3 ">Обработка события</h5>
           <h6 class="about__accordion-title c1 fw-bold mb-3 ">26 занятий</h6>
@@ -765,7 +765,7 @@
             </div>
           </div>
         </div>
-        <div class="col-xl-3 col-m-6 col-s-12 text-start">
+        <div class="col-xl-3 col-md-6 mt-3 mt-xl-0 text-start">
           <h4 class="about__accordion-title c1 fw-bold mb-3 text-uppercase">Глава 4</h4>
           <h5 class="about__accordion-title c2 fw-bold mb-3 ">Дополнительно</h5>
           <h6 class="about__accordion-title c1 fw-bold mb-3 ">12 занятий</h6>
@@ -943,16 +943,16 @@
       <h2 class="section__title">Как проходит обучение?</h2>
       <div class="learning__wrapper">
         <div class="row">
-        <div class="col-xl-7 col-s-12">
-          <div class="learning__text">
+        <div class="col-xl-7">
+          <p class="learning__text">
             Обучение проходит на закрытом канале в телеграм или группе ВК, вам будет предоставлен доступ после заказа курса. Там вы
             будете изучать курс. Вам не нужно будет скачивать курс на компьютер. Вы сможете заходить на канал курса не только с
             компьютера, но и с телефона, из любого места, где есть интернет. Вы сможете изучать курс в любое время.<br><br>
             После покупки курса вы так же получаете доступ к специальной группе в телеграм, где можно общаться с другими студентами
             или задавать вопросы автору курса, а также делиться своими результатами.
-          </div>
+          </p>
         </div>
-        <div class="col-xl-5 col-s-12 text-start">
+        <div class="col-xl-5 col-s-12 text-center text-xl-end">
           <img src="img/Mockup.png" alt="image: mockup" class="learning__image img-fluid">
         </div>
       </div>
@@ -1015,10 +1015,10 @@
       <h2 class="section__title">Супер <strong>JavaScript</strong></h2>
       <p class="buy__text">Самый полный обучающий курс по изучению языка программирования JavaScript от автора образовательного канала ITDoctor</p>
       <div class="row">
-        <div class="col-xl-6 col-s-12">
-          <img src="img/preview_course.png" alt="image: preview_course" class="buy__image img-fluid">
+        <div class="col-6">
+          <img src="img/preview_course.png" alt="image: preview_course" class="pt-5 buy__image img-fluid">
         </div>
-        <div class="col-xl-6 col-s-12 ">
+        <div class="col-6">
           <div class="buy__price-wrapper">
             <div class="buy__title">Стоимость курса:</div>
             <div class="buy__price">5300 руб.</div>
@@ -1032,11 +1032,11 @@
   <footer class="footer bg2">
     <div class="container">
       <div class="row">
-        <div class="col-4 text-start d-flex justify-content-center flex-column">
+        <div class="col-lg-4 text-center mb-5 mb-lg-0 text-lg-start d-flex justify-content-center flex-column">
           <a class="footer-brand" href="#"><img src="img/logo.png" alt="image: logo" class="footer__logo logo"></a>
           <p class="footer__text">© ITDoctor, 2021</p>
         </div>
-        <div class="col-4 text-center d-flex justify-content-center flex-column">
+        <div class="col-lg-4 text-center mb-5 mb-lg-0 d-flex justify-content-center flex-column">
           <div class="footer__socials-wrapper">
             <a href="https://www.youtube.com/c/ITDoctor" class="footer__social-link"><i class="footer__social-icon  fa-youtube-play"></i></a>
             <a href="https://t.me/itdoctorstudio" class="footer__social-link"><i class="footer__social-icon  fa-send"></i></a>
@@ -1048,7 +1048,7 @@
           </div>
           <a class="footer__social-link c1" href="policy.html">Политика конфиденциальности</a>
         </div>
-        <div class="col-4 text-end d-flex justify-content-center flex-column">
+        <div class="col-lg-4 text-center text-lg-end d-flex justify-content-center flex-column">
           <a class="footer__mail" target="_blank"
             href="mailto:ismail_2016@mail.ru?subject=Вопрос по курсу 'Супер JavaScript'&amp;body=Здравствуйте, уважаемый ITDoctor,">ismail_2016@mail.ru</a>
             <p class="footer__text">По всем вопросам в любое время</p>
